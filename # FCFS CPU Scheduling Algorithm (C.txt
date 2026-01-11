@@ -1,0 +1,44 @@
+# FCFS CPU Scheduling Algorithm (C Program)
+
+Description
+This project implements the **First Come, First Served (FCFS)** CPU scheduling algorithm using the C programming language.
+
+FCFS is a non-preemptive scheduling algorithm where processes are executed in the order they arrive in the ready queue (FIFO – First In, First Out).
+
+## ⚙️ Algorithm Used
+**First Come, First Served (FCFS)**
+
+- The first process to arrive gets executed first.
+- Once a process starts executing, it runs till completion.
+- No priority or time slicing is involved.
+
+## 🧠 Key Concepts Covered
+- Burst Time (BT)
+- Waiting Time (WT)
+- Turnaround Time (TAT)
+- Average Waiting Time
+- Average Turnaround Time
+
+## 📝 Formulae Used
+- **Waiting Time (WT)**  
+  WT₀ = 0  
+  WTᵢ = BT₀ + BT₁ + ... + BTᵢ₋₁  
+
+- **Turnaround Time (TAT)**  
+  TAT = WT + BT  
+
+## 💻 Program Features
+- Accepts number of processes
+- Takes burst time for each process
+- Calculates:
+  - Waiting Time
+  - Turnaround Time
+  - Average Waiting Time
+  - Average Turnaround Time
+- Displays results in tabular format
+
+## ▶️ How to Compile and Run
+
+### Compile
+```bash
+gcc fcfs.c -o fcfs
